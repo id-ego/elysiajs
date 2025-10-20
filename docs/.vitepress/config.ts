@@ -44,6 +44,17 @@ export default defineConfig({
         experimental: {
             // enableNativePlugin: true
         },
+        build: {
+            chunkSizeWarningLimit: 1000,
+            rollupOptions: {
+                output: {
+                    manualChunks: {
+                        vue: ['vue'],
+                        vitepress: ['vitepress']
+                    }
+                }
+            }
+        },
         plugins: [
             nodePolyfills({
                 include: ['path', 'crypto']
