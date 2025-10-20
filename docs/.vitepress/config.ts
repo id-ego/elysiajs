@@ -48,9 +48,16 @@ export default defineConfig({
             chunkSizeWarningLimit: 1000,
             rollupOptions: {
                 output: {
-                    manualChunks: {
-                        vue: ['vue'],
-                        vitepress: ['vitepress']
+                    manualChunks(id) {
+                        if (id.includes('node_modules')) {
+                            if (id.includes('vue')) {
+                                return 'vendor-vue'
+                            }
+                            if (id.includes('vitepress')) {
+                                return 'vendor-vitepress'
+                            }
+                            return 'vendor'
+                        }
                     }
                 }
             }
