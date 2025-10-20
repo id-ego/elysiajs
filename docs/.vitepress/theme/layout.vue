@@ -121,7 +121,7 @@ const sponsors = Object.values(data).filter(
 
 const prompt = computed(() =>
     encodeURI(
-        `I'm looking at https://elysiajs.com${router.route.path}.\n\nWould you kindly explain, summarize the concept, and answer any questions I have about it?`
+        `I'm looking at https://elysiajs.docsforall.com${router.route.path}.\n\nWould you kindly explain, summarize the concept, and answer any questions I have about it?`
     )
 )
 </script>
@@ -237,7 +237,7 @@ const prompt = computed(() =>
                 </a>
 
                 <a
-                    :href="`https://elysiajs.com${router.route.path.replace(/.html$/g, '')}.md`"
+                    :href="`https://elysiajs.docsforall.com${router.route.path.replace(/.html$/g, '')}.md`"
                     class="clicky"
                     target="_blank"
                     rel="noopener noreferrer"

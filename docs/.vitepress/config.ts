@@ -77,7 +77,7 @@ export default defineConfig({
                           'blog/*',
                           'public/*'
                       ],
-                      domain: 'https://elysiajs.com'
+                      domain: 'https://elysiajs.docsforall.com'
                   })
                 : undefined,
             process.env.ANALYZE === 'true' ? analyzer() : undefined
@@ -116,7 +116,7 @@ export default defineConfig({
             'meta',
             {
                 property: 'og:image',
-                content: 'https://elysiajs.com/assets/cover_2k.jpg'
+                content: 'https://elysiajs.docsforall.com/assets/cover_2k.jpg'
             }
         ],
         [
@@ -144,7 +144,7 @@ export default defineConfig({
             'meta',
             {
                 property: 'twitter:image',
-                content: 'https://elysiajs.com/assets/cover_2k.jpg'
+                content: 'https://elysiajs.docsforall.com/assets/cover_2k.jpg'
             }
         ],
         [
